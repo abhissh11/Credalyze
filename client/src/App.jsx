@@ -28,6 +28,7 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/upload" element={<UploadPage/>} />
             <Route path="/reports" element={<ReportPage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         <Toaster richColors position="top-center" />
         </main>
